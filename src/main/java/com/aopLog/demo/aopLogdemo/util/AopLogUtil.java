@@ -1,6 +1,6 @@
-package com.aopLog.demo.ssodemo.util;
+package com.aopLog.demo.aopLogdemo.util;
 
-import com.aopLog.demo.ssodemo.annoation.DataLog;
+import com.aopLog.demo.aopLogdemo.annoation.DataLog;
 import org.springframework.util.StringUtils;
 
 import java.lang.reflect.Field;

@@ -1,7 +1,7 @@
-package com.aopLog.demo.ssodemo.service;
+package com.aopLog.demo.aopLogdemo.service;
 
-import com.aopLog.demo.ssodemo.dataobject.Operate;
-import com.aopLog.demo.ssodemo.mapper.OperateMapper;
+import com.aopLog.demo.aopLogdemo.dataobject.Operate;
+import com.aopLog.demo.aopLogdemo.mapper.OperateMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

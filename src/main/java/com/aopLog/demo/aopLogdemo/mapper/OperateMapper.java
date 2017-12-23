@@ -1,6 +1,6 @@
-package com.aopLog.demo.ssodemo.mapper;
+package com.aopLog.demo.aopLogdemo.mapper;
 
-import com.aopLog.demo.ssodemo.dataobject.Operate;
+import com.aopLog.demo.aopLogdemo.dataobject.Operate;
 import java.util.List;
 
 public interface OperateMapper {

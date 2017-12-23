@@ -13,5 +13,5 @@ spring:
     port: 6379
     host: localhost
 mybatis:
-  type-aliases-package: com.aopLogLog.demo.ssodemo.dataobject
+  type-aliases-package: com.aopLogLog.demo.aopLogdemo.dataobject
   mapper-locations: classpath:mapper/*.xml

@@ -1,9 +1,9 @@
-package com.aopLog.demo.ssodemo.aspect;
+package com.aopLog.demo.aopLogdemo.aspect;
 
-import com.aopLog.demo.ssodemo.annoation.DataLog;
-import com.aopLog.demo.ssodemo.dataobject.Operate;
-import com.aopLog.demo.ssodemo.service.OperateService;
-import com.aopLog.demo.ssodemo.util.AopLogUtil;
+import com.aopLog.demo.aopLogdemo.annoation.DataLog;
+import com.aopLog.demo.aopLogdemo.dataobject.Operate;
+import com.aopLog.demo.aopLogdemo.service.OperateService;
+import com.aopLog.demo.aopLogdemo.util.AopLogUtil;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -25,15 +25,15 @@ public class LogAspect {
     @Autowired
     OperateService operateService;
 
-    @Pointcut("execution(public * com.aopLog.demo.ssodemo.service.*.add*(..))")
+    @Pointcut("execution(public * com.aopLog.demo.aopLogdemo.service.*.add*(..))")
     public void addLog(){
     }
 
-    @Pointcut("execution(public * com.aopLog.demo.ssodemo.service.*.delete*(..))")
+    @Pointcut("execution(public * com.aopLog.demo.aopLogdemo.service.*.delete*(..))")
     public void deleteLog(){
     }
 
-    @Pointcut("execution(public * com.aopLog.demo.ssodemo.service.*.update*(..))")
+    @Pointcut("execution(public * com.aopLog.demo.aopLogdemo.service.*.update*(..))")
     public void updateLog(){
     }
 

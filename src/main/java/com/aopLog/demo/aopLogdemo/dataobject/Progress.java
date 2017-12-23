@@ -1,4 +1,4 @@
-package com.aopLog.demo.ssodemo.dataobject;
+package com.aopLog.demo.aopLogdemo.dataobject;
 
 import lombok.Data;
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.aopLog.demo.ssodemo.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="com.aopLog.demo.ssodemo.dataobject.User" >
+<mapper namespace="com.aopLog.demo.aopLogdemo.mapper.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.aopLog.demo.aopLogdemo.dataobject.User" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
     <result column="lastOutTime" property="lastOutTime" jdbcType="TIMESTAMP" />
   </resultMap>
-  <update id="updateByPrimaryKey" parameterType="com.aopLog.demo.ssodemo.dataobject.User" >
+  <update id="updateByPrimaryKey" parameterType="com.aopLog.demo.aopLogdemo.dataobject.User" >
     update user set
     <if test="userName != null and userName != ''">
       user_name = #{userName,jdbcType=VARCHAR},
@@ -22,7 +22,7 @@
     delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.aopLog.demo.ssodemo.dataobject.User" keyProperty="id" useGeneratedKeys="true">
+  <insert id="insert" parameterType="com.aopLog.demo.aopLogdemo.dataobject.User" keyProperty="id" useGeneratedKeys="true">
     insert into user (id, user_name, password, 
       lastOutTime)
     values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 

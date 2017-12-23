@@ -1,4 +1,4 @@
-package com.aopLog.demo.ssodemo.annoation;
+package com.aopLog.demo.aopLogdemo.annoation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

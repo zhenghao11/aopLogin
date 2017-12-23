@@ -1,6 +1,6 @@
-package com.aopLog.demo.ssodemo.dataobject;
+package com.aopLog.demo.aopLogdemo.dataobject;
 
-import com.aopLog.demo.ssodemo.annoation.DataLog;
+import com.aopLog.demo.aopLogdemo.annoation.DataLog;
 import lombok.Data;
 
 import java.util.Date;
