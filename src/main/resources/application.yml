@@ -9,9 +9,6 @@ spring:
     url: jdbc:mysql://localhost:3306/springaboutme?characterEncoding=utf-8&useSSL=false
     username: root
     password: root
-  redis:
-    port: 6379
-    host: localhost
 mybatis:
   type-aliases-package: com.aopLogLog.demo.aopLogdemo.dataobject
   mapper-locations: classpath:mapper/*.xml

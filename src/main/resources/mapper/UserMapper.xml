@@ -23,7 +23,7 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.aopLog.demo.aopLogdemo.dataobject.User" keyProperty="id" useGeneratedKeys="true">
-    insert into user (id, user_name, password, 
+    insert into user (id, username, password,
       lastOutTime)
     values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
       now())
