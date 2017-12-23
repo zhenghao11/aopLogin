@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aopLog.demo.ssodemo.mapper.OperateMapper" >
+  <resultMap id="BaseResultMap" type="com.aopLog.demo.ssodemo.dataobject.Operate" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="action" property="action" jdbcType="VARCHAR" />
+    <result column="operator" property="operator" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from operate
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.aopLog.demo.ssodemo.dataobject.Operate" >
+    insert into operate (id, action, operator, 
+      create_time)
+    values (#{id,jdbcType=INTEGER}, #{action,jdbcType=VARCHAR}, #{operator,jdbcType=VARCHAR}, 
+      now())
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.aopLog.demo.ssodemo.dataobject.Operate" >
+    update operate
+    set action = #{action,jdbcType=VARCHAR},
+      operator = #{operator,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, action, operator, create_time
+    from operate
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, action, operator, create_time
+    from operate
+  </select>
+</mapper>
