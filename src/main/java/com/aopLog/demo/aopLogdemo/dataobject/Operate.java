@@ -5,6 +5,8 @@ import lombok.Data;
 import java.util.Date;
 
 /**
+ * 日志实体
+ *
  * @Author hzheng
  * @Date 2017/11/8
  */
