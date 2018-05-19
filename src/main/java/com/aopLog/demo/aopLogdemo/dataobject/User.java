@@ -3,6 +3,7 @@ package com.aopLog.demo.aopLogdemo.dataobject;
 import com.aopLog.demo.aopLogdemo.annoation.DataLog;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,7 +12,9 @@ import java.util.Date;
  */
 @Data
 @DataLog(name = "用户信息")
-public class User {
+public class User implements Serializable {
+
+    private static final long serialVersionUID = 6975117390327965354L;
 
     private Integer id;
 
