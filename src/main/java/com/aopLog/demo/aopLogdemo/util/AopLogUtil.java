@@ -41,6 +41,13 @@ public class AopLogUtil {
         return stringBuilder.substring(0, stringBuilder.length() - 1).toString();
     }
 
+    /**
+     * 比较两个字段是否相同
+     *
+     * @param obj1
+     * @param obj2
+     * @return
+     */
     private static boolean equals(Object obj1, Object obj2) {
         if (obj1 == obj2) {
             return true;
